@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+font-size: 16px;
+}
+
+header{
+    padding:1em 0;
+    background-color: #ced4da;
+    
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 1em;
+    disply: flex;
+}
+.col-left {
+    width: 30%;
+}
+
+.col-right {
+    width: 70%;
+}
