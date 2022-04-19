@@ -3,15 +3,94 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --darkblue: #3D5A80;
+    --blue: #98C1D9;
+    --lightblue: #E0FBFC;
+    --orange: #EE6C4D;
+    --darkgray: #293241;
+    --silver: #979dac;
+    --white: white; 
+}
+
 body{
-font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 16px;
+    color: var(--lightblue);
+    background-color: var(--darkgray);
+    line-height: 1.5;
+  
 }
 
 header{
     padding:1em 0;
-    background-color: #ced4da;
+    color: var(--lightblue);
+    background-color: var(--darkblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
     
 }
+
+.name{
+    color: var(--orange);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: var(--orange);
+  }
+
+  nav a {
+    text-decoration: none;
+    padding: 5px 5px;
+    color: var(--blue);
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+
+  nav a:hover {
+    background-size: 100% 100%;
+    color: var(--orange);
+  }
+
+  .photo-banner {
+    background-image: url("../images/pier.JPG");
+    background-size:cover;
+    background-position: center;
+    min-height: 30vh;
+    color: var(--light);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .photo-banner div {
+    flex: 0 0 90%;
+  }
+  
+  .photo-banner h2 {
+    background-color: var(--lightblue);
+    color: var(--orange);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+  }
+  
+  
+  
 
 .container {
     max-width: 90%;
@@ -28,4 +107,41 @@ section {
 
 .col-right {
     width: 70%;
+}
+
+.animated { 
+ 
+    background-repeat: no-repeat;
+    background-position: left top; 
+    padding-top:15px;
+    margin-bottom:15px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 4s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+}
+ 
+@-webkit-keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-15px);} 
+    60% {-webkit-transform: translateY(-15px);} 
+} 
+ 
+@keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+}
+ 
+.bounce { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+}
+
+a {
+    color: var(--lightblue);
+}
+
+a:hover {
+    color: var(--orange);
 }
