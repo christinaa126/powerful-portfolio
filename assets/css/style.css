@@ -41,8 +41,8 @@ header{
 
 .name{
     color: var(--orange);
-    font-family: 'Inspiration', cursive;
-    font-size: 3rem;
+    font-family: 'Nova Cut', cursive;;
+    font-size: 2.3rem;
     text-shadow: -1px 0 var(--darkgray), 0 1px var(--darkgray), 1px 0 var(--lightblue), 0 -1px var(--lightblue);
 }
 
@@ -95,9 +95,6 @@ nav {
     display: inline;
   }
   
-  
-  
-
 .container {
     max-width: 90%;
     margin: 0 auto;
@@ -151,3 +148,112 @@ a {
 a:hover {
     color: var(--orange);
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+  }
+
+.flex-image {
+    background-blend-mode  :overlay;
+    min-height: 150px;
+    max-height: 150px;
+    border: 5px solid var(--lightblue);
+    background-color: var(--blue);
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-size: 100%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+
+h3 {
+    background-color: var(--lightblue);
+    color: var(--orange);
+    text-shadow: -1px 0 var(--darkgray), 0 1px var(--darkgray), 1px 0 var(--lightblue), 0 -1px var(--lightblue);
+  }
+  
+.flex-image:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-image p {
+    background-color: var(--darkblue);
+    color: var(--silver);
+}
+
+.unblock-unwind {
+    background-image: url("../images/unblock-unwind.jpg");
+  }
+  
+.password-generator {
+    background-image: url("../images/pasword-generator.jpg");
+  }
+  
+.calendar {
+    background-image: url("../images/calendar.jpg");
+  }
+  
+.portfolio {
+    background-image: url("../images/portfolio.jpg");
+  }
+  
+@media screen and (max-width: 980px) {
+header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+    }
+  
+header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+    }
+  
+header nav {
+    justify-content: center;
+    }
+  
+/* .page-section > h2,
+.page-section > div {
+      flex: 0 0 100%;
+    } */
+  
+    /* .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    } */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }  
