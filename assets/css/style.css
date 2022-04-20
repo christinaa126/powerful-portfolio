@@ -20,6 +20,7 @@ body{
     font-size: 16px;
     color: var(--lightblue);
     background-color: var(--darkgray);
+    background-image: linear-gradient(180deg, var(--darkgray) 15%, var(--blue) 100%);
     line-height: 1.5;
   
 }
@@ -28,6 +29,7 @@ header{
     padding:1em 0;
     color: var(--lightblue);
     background-color: var(--darkblue);
+    background-image: linear-gradient(180deg, var(--darkgray) 0%, var(--lightblue) 100%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,6 +41,9 @@ header{
 
 .name{
     color: var(--orange);
+    font-family: 'Inspiration', cursive;
+    font-size: 3rem;
+    text-shadow: -1px 0 var(--darkgray), 0 1px var(--darkgray), 1px 0 var(--lightblue), 0 -1px var(--lightblue);
 }
 
 nav {
@@ -85,6 +90,7 @@ nav {
     margin: 0;
     padding: 5px 10px;
     font-size: 2.3rem;
+    font-family: 'Inspiration', cursive;
     line-height: 1.2;
     display: inline;
   }
@@ -115,8 +121,8 @@ section {
     background-position: left top; 
     padding-top:15px;
     margin-bottom:15px;
-    -webkit-animation-duration: 10s;
-    animation-duration: 4s; 
+    -webkit-animation-duration: 20s;
+    animation-duration: 10s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
 }
